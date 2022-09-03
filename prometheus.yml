@@ -28,3 +28,10 @@ scrape_configs:
 
     static_configs:
       - targets: ["localhost:9090"]
+      
+      
+  - job_name: 'iiiiiiiiiii'
+    static_configs:
+    - targets: ['68.183.234.223:9100']
+      labels:
+        instance: '68.183.234.223'
