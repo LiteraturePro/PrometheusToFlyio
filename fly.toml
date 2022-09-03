@@ -3,8 +3,8 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
-#[build]
-#image = "prom/prometheus"
+[build]
+image = "literature/prometheus"
 
 #[mount]
 #source = "prometheus_storage"
