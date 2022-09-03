@@ -6,9 +6,9 @@ processes = []
 [build]
 image = "prom/prometheus"
 
-[mount]
-source = "prometheus_storage"
-destination = "/etc/prometheus"
+#[mount]
+#source = "prometheus_storage"
+#destination = "/etc/prometheus"
 
 [env]
 
