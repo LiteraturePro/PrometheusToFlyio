@@ -32,6 +32,15 @@ scrape_configs:
     - targets: ['[2001:bc8:47a0:640::1]:9790']
     scrape_interval: 5m
     scrape_timeout: 4m
+  
+  - job_name: 'Nginx'
+    static_configs:
+    - targets: ['47.102.210.24:9113']
+      labels:
+        instance: ['nginx-wxiou']
+    - targets: ['47.102.210.24:9114']
+      labels:
+        instance: ['nginx-ioku']
     
   - job_name: 'Linux'
     static_configs:
