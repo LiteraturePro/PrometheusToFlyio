@@ -33,8 +33,11 @@ scrape_configs:
     scrape_interval: 5m
     scrape_timeout: 4m
     
-  - job_name: 'iiiiiiiiiii'
+  - job_name: 'Linux'
     static_configs:
+    - targets: ['146.56.153.99:9100']
+      labels:
+        instance: 'Oracle-Arm'
     - targets: ['68.183.234.223:9100']
       labels:
         instance: '68.183.234.223'
