@@ -33,14 +33,14 @@ scrape_configs:
     scrape_interval: 5m
     scrape_timeout: 4m
   
-  - job_name: 'Nginx'
+  - job_name: 'nginx'
     static_configs:
     - targets: ['47.102.210.24:9113']
       labels:
-        instance: ['nginx-wxiou']
+        instance: 'nginx-wxiou'
     - targets: ['47.102.210.24:9114']
       labels:
-        instance: ['nginx-ioku']
+        instance: 'nginx-ioku'
     
   - job_name: 'Linux'
     static_configs:
