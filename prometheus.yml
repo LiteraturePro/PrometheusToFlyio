@@ -27,7 +27,7 @@ scrape_configs:
     static_configs:
       - targets: ["localhost:9090"]
       
-  - job_name: 'sentry_exporter'
+  - job_name: 'sentry'
     static_configs:
     - targets: ['[2001:bc8:47a0:640::1]:9790']
     scrape_interval: 5m
@@ -38,6 +38,66 @@ scrape_configs:
     - targets: ['146.56.153.99:9100']
       labels:
         instance: 'Oracle-Arm'
+    - targets: ['193.123.251.169:9100']
+      labels:
+        instance: 'Oracle-Seoul'
+    - targets: ['140.238.21.152:9100']
+      labels:
+        instance: 'Oracle-Seoul'
+    - targets: ['149.57.135.90:9100']
+      labels:
+        instance: 'Virmach'
+    - targets: ['124.156.141.223:9100']
+      labels:
+        instance: 'Tencent'
+    - targets: ['20.205.41.204:9100']
+      labels:
+        instance: 'Azure'
+    - targets: ['47.102.210.24:9100']
+      labels:
+        instance: '	Aliyun'
+    - targets: ['139.155.253.244:9100']
+      labels:
+        instance: 'Tencent'
+    - targets: ['47.100.104.162:9100']
+      labels:
+        instance: 'Aliyun'
+    - targets: ['116.63.152.214:9100']
+      labels:
+        instance: 'HuaWei'
+    - targets: ['[2001:bc8:47a0:640::1]:9100']
+      labels:
+        instance: 'Scaleway'
+    - targets: ['13.231.233.164:9100']
+      labels:
+        instance: 'AWS'
+    - targets: ['194.87.236.155:9100']
+      labels:
+        instance: 'Ruvds'
+    - targets: ['20.243.81.253:9100']
+      labels:
+        instance: 'Azure'
+    - targets: ['20.41.113.196:9100']
+      labels:
+        instance: 'Azure'
+    - targets: ['20.239.77.86:9100']
+      labels:
+        instance: 'Azure'
+    - targets: ['20.205.61.150:9100']
+      labels:
+        instance: 'Azure'
+    - targets: ['159.223.93.57:9100']
+      labels:
+        instance: 'DigitalOcean'
+    - targets: ['68.183.239.250:9100']
+      labels:
+        instance: 'DigitalOcean'
+    - targets: ['178.128.126.115:9100']
+      labels:
+        instance: 'DigitalOcean'
     - targets: ['68.183.234.223:9100']
       labels:
-        instance: '68.183.234.223'
+        instance: 'DigitalOcean'
+    - targets: ['159.223.41.245:9100']
+      labels:
+        instance: 'DigitalOcean'
