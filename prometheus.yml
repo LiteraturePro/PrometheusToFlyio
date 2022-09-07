@@ -41,6 +41,26 @@ scrape_configs:
     - targets: ['47.102.210.24:9114']
       labels:
         instance: 'nginx-ioku'
+  - job_name: 'MongoDB'
+    static_configs:
+    - targets: ['[2001:bc8:47a0:640::1]:9217']
+      labels:
+        instance: 'azure-hongkong-244'
+    - targets: ['[2001:bc8:47a0:640::1]:9218']
+      labels:
+        instance: 'aws-singapore-1204'
+    - targets: ['[2001:bc8:47a0:640::1]:9219']
+      labels:
+        instance: 'google-taiwan-238'
+    - targets: ['[2001:bc8:47a0:640::1]:9221']
+      labels:
+        instance: 'azure-netherlands-1205-virmach'
+    - targets: ['[2001:bc8:47a0:640::1]:9220']
+      labels:
+        instance: 'google-tokyo-09'    
+    - targets: ['[2001:bc8:47a0:640::1]:9222']
+      labels:
+        instance: 'aws-seoul-163'  
   - job_name: 'Linux'
     static_configs:
     - targets: ['146.56.153.99:9100']
@@ -48,28 +68,28 @@ scrape_configs:
         instance: 'Oracle-Arm'
     - targets: ['193.123.251.169:9100']
       labels:
-        instance: 'Oracle-Seoul'
+        instance: 'Oracle-Seoul-01'
     - targets: ['140.238.21.152:9100']
       labels:
-        instance: 'Oracle-Seoul'
+        instance: 'Oracle-Seoul-02'
     - targets: ['149.57.135.90:9100']
       labels:
         instance: 'Virmach'
     - targets: ['124.156.141.223:9100']
       labels:
-        instance: 'Tencent'
+        instance: 'Tencent-hk'
     - targets: ['20.205.41.204:9100']
       labels:
-        instance: 'Azure'
+        instance: 'Azure-01'
     - targets: ['47.102.210.24:9100']
       labels:
-        instance: '	Aliyun'
+        instance: '	Aliyun-01'
     - targets: ['139.155.253.244:9100']
       labels:
-        instance: 'Tencent'
+        instance: 'Tencent-cd'
     - targets: ['47.100.104.162:9100']
       labels:
-        instance: 'Aliyun'
+        instance: 'Aliyun-02'
     - targets: ['116.63.152.214:9100']
       labels:
         instance: 'HuaWei'
@@ -84,28 +104,28 @@ scrape_configs:
         instance: 'Ruvds'
     - targets: ['20.243.81.253:9100']
       labels:
-        instance: 'Azure'
+        instance: 'Azure-02'
     - targets: ['20.41.113.196:9100']
       labels:
-        instance: 'Azure'
+        instance: 'Azure-03'
     - targets: ['20.239.77.86:9100']
       labels:
-        instance: 'Azure'
+        instance: 'Azure-04'
     - targets: ['20.205.61.150:9100']
       labels:
-        instance: 'Azure'
+        instance: 'Azure-05'
     - targets: ['159.223.93.57:9100']
       labels:
-        instance: 'DigitalOcean'
+        instance: 'DigitalOcean-01'
     - targets: ['68.183.239.250:9100']
       labels:
-        instance: 'DigitalOcean'
+        instance: 'DigitalOcean-02'
     - targets: ['178.128.126.115:9100']
       labels:
-        instance: 'DigitalOcean'
+        instance: 'DigitalOcean-03'
     - targets: ['68.183.234.223:9100']
       labels:
-        instance: 'DigitalOcean'
+        instance: 'DigitalOcean-04'
     - targets: ['159.223.41.245:9100']
       labels:
-        instance: 'DigitalOcean'
+        instance: 'DigitalOcean-05'
