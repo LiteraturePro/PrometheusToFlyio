@@ -72,9 +72,6 @@ scrape_configs:
     - targets: ['140.238.21.152:9100']
       labels:
         instance: 'Oracle-Seoul-02'
-    - targets: ['149.57.135.90:9100']
-      labels:
-        instance: 'Virmach'
     - targets: ['124.156.141.223:9100']
       labels:
         instance: 'Tencent-hk'
@@ -114,18 +111,3 @@ scrape_configs:
     - targets: ['20.205.61.150:9100']
       labels:
         instance: 'Azure-05'
-    - targets: ['159.223.93.57:9100']
-      labels:
-        instance: 'DigitalOcean-01'
-    - targets: ['68.183.239.250:9100']
-      labels:
-        instance: 'DigitalOcean-02'
-    - targets: ['178.128.126.115:9100']
-      labels:
-        instance: 'DigitalOcean-03'
-    - targets: ['68.183.234.223:9100']
-      labels:
-        instance: 'DigitalOcean-04'
-    - targets: ['159.223.41.245:9100']
-      labels:
-        instance: 'DigitalOcean-05'
