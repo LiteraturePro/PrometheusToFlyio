@@ -102,12 +102,9 @@ scrape_configs:
     - targets: ['20.243.81.253:9100']
       labels:
         instance: 'Azure-02'
-    - targets: ['20.41.113.196:9100']
-      labels:
-        instance: 'Azure-03'
     - targets: ['20.239.77.86:9100']
       labels:
-        instance: 'Azure-04'
+        instance: 'Azure-03'
     - targets: ['20.205.61.150:9100']
       labels:
-        instance: 'Azure-05'
+        instance: 'Azure-04'
