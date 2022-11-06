@@ -93,9 +93,6 @@ scrape_configs:
     - targets: ['[2001:bc8:47a0:640::1]:9100']
       labels:
         instance: 'Scaleway'
-    - targets: ['13.231.233.164:9100']
-      labels:
-        instance: 'AWS'
     - targets: ['194.87.236.155:9100']
       labels:
         instance: 'Ruvds'
